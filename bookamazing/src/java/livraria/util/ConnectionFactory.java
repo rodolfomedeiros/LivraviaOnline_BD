@@ -17,12 +17,13 @@ public class ConnectionFactory {
             Logger.getLogger(ConnectionFactory.class.getName()).log(Level.SEVERE, null, ex);
         }
         try {
-            String url = "jdbc:mysql://localhost/bookamazing";
-            String user = "userbookamazing";
-            String pass = "bookamazing";
+            String url = "jdbc:mysql://localhost:3306/bookamazing";
+            String user = "root";
+            String pass = "rootmysql";
             
             return DriverManager.getConnection(url,user,pass);
         } catch (SQLException e) {
+            System.out.println(e.getMessage());
             throw new ConnectionFactoryException();
         }
     }
