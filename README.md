@@ -1,4 +1,4 @@
-# LivraviaOnline_BD
+# Livraria Online
 E-commerce - Livraria Online, para a disciplina de banco de dados...
 
 ########################## 
